@@ -16,6 +16,6 @@ export const filteredHighPriorityTaskListState = selector({
         const filter = get(highPriorityTaskListState)
         const list = get(taskListState)
 
-        return list.filter(task => task.priority > filter)
+        return list.filter(task => task.priority >= filter)
     }
 });

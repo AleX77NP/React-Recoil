@@ -17,7 +17,8 @@ const Tasks = () => {
             <hr />
             {taskList.map((task) => (
                 <div key={task.id}>
-                    {task.name}
+                    {task.name} - 
+                    {" " + task.priority}
                     <button style={{color: 'white', backgroundColor: 'red', marginLeft: '10px'}} onClick={() => removeTask(task.id)}>Delete</button>
                 </div>
             ))}
